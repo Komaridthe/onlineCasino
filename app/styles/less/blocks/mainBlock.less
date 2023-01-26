@@ -1,27 +1,42 @@
 body {
   background-image: initial;
   background-color: rgb(26, 29, 36);
-  color: rgb(232, 230, 227);
   .wrapper{
     display: flex;
     flex-direction: column;
     padding: 0 15px;
-    header {
-      height: 80px;
-      min-width: 320px;
+    margin: 0 auto;
+    .header {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
       width: 100%;
-      border-bottom: 1px solid #262c39;
-      header__inner{
+      background-color: rgb(26, 29, 36);
+      &__inner{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
         &-logo{
           img{
             height: 40px;
             max-width: 100%;
             min-width: 46px;
           }
+        }
+        &-btn{
+          background-color: rgb(7, 66, 173);
+          border-color: transparent;
+          color: rgb(232, 230, 227);
+          padding: 9px 20px;
+          border-radius: 5px;
+          font-size: 14px;
+          font-weight: 400;
+          cursor: pointer;
         }
       }
     }
