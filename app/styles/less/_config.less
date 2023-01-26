@@ -3,8 +3,8 @@
 @accent: orange; // Accent Color
 @fontsize: 16px; // Body Font Size
 @textcolor: #333; // Text Color
-@lineheight: 1.65; // Document Line Height
-@userfont: roboto-oh5, sans-serif; // User Font Family
+@lineheight: 1.25; // Document Line Height
+@userfont: Rubik,Arial,sans-serif; // User Font Family
 @systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 // IMPORT SECTION
@@ -30,6 +30,13 @@
 
 // GENERAL CSS SETTINGS
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: none;
+}
+
 ::placeholder {
 	color: #666;
 }
@@ -53,4 +60,5 @@ body {
 	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
+	height: 100%;
 }
