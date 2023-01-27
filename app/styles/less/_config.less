@@ -64,6 +64,10 @@ textarea {
   }
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: @userfont;
   font-size: @fontsize;
@@ -72,7 +76,6 @@ body {
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
-  height: 100%;
   background-image: initial;
   background-color: rgb(26, 29, 36);
 
@@ -81,7 +84,7 @@ body {
     flex-direction: column;
     padding: 0 15px;
     margin: 0 auto;
-    height: 1px;
+    height: 1px; //! !!!!!!!!!!!!!!!!!!
     min-height: 100%;
   }
 }
