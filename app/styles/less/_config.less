@@ -54,9 +54,11 @@
 input,
 textarea {
   outline: none;
+
   &:focus:required:invalid {
     border-color: red;
   }
+
   &:required:valid {
     border-color: green;
   }
@@ -73,6 +75,7 @@ body {
   height: 100%;
   background-image: initial;
   background-color: rgb(26, 29, 36);
+
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -80,4 +83,8 @@ body {
     margin: 0 auto;
     height: 100%;
   }
+}
+
+button:not(:disabled) {
+  cursor: pointer;
 }
