@@ -68,8 +68,19 @@ img, svg {
   vertical-align: middle;
 }
 
+a, button {
+  font: inherit;
+  text-decoration: none;
+}
+
 html, body {
   height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
