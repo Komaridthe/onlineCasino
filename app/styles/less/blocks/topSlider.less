@@ -1,72 +1,109 @@
-.top__slider {
+.firstSlider {
   margin: 60px auto 0;
-  padding: 0;
   height: 280px;
   width: 100%;
-  max-width: 100%;
-  position: relative;
 
-  .ts__Item-vipClub {
-    background-image: url("../images/src/topSlider/vip_bg.webp");
+  .top__slider {
+    padding: 0;
+    min-height: 280px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    .ts__Item-vipClub {
+      background-image: url("../images/src/topSlider/vip_bg.webp");
+      background-position: right center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      //height: 100%;
+    }
+
+    .slider__Item-loyalty {
+      background-color: #c83e03;
+    }
+
+    .slider__Item-partnership {
+      background-color: #4500a2;
+    }
+
+    &-item {
+      height: 100%;
+      padding: 15px;
+      min-height: 280px;
+
+      .top__slider-title, .top__slider-subtitle {
+        background-color: rgba(0, 0, 0, 0.26);
+        color: rgb(232, 230, 227);
+        border-radius: 10px;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 500;
+        padding: 5px 10px;
+      }
+
+      .top__slider-title {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      .top__slider-subtitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .top__slider-btn {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-top: 15px;
+        padding: 7px 30px;
+        border-radius: 20px;
+        background-color: rgb(24, 26, 27);
+        border-color: transparent;
+        text-transform: uppercase;
+        transition: all .3s ease;
+        outline: none;
+      }
+
+      .ts__btn-vipClub {
+        color: rgb(232, 230, 227);
+      }
+
+      .ts__btn-loyalty {
+        color: rgb(255, 80, 26);
+      }
+
+      .ts__btn-partnership {
+        color: rgb(144, 62, 255);
+      }
+    }
   }
+}
 
-  .slider__Item-loyalty {
-    background-color: #c83e03;
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  list-style-type: none;
+
+  button {
+    border: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0 10px;
+    //background-color: $gr;
+    width: 50px;
+    height: 1px;
+
   }
+}
 
-  .slider__Item-partnership {
-    background-color: #4500a2;
-  }
-
-  &-item {
-    height: 100%;
-    padding: 15px;
-
-    .top__slider-title, .top__slider-subtitle {
-      background-color: rgba(0, 0, 0, 0.26);
-      color: rgb(232, 230, 227);
-      border-radius: 10px;
-      display: inline-block;
-      font-size: 22px;
-      font-weight: 500;
-      padding: 5px 10px;
-    }
-
-    .top__slider-title {
-      font-size: 22px;
-      font-weight: 500;
-      margin-bottom: 5px;
-    }
-
-    .top__slider-subtitle {
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
-
-    .top__slider-btn {
-      display: block;
-      font-size: 1.1rem;
-      font-weight: 500;
-      margin-top: 15px;
-      padding: 7px 30px;
-      border-radius: 20px;
-      background-color: rgb(24, 26, 27);
-      border-color: transparent;
-      text-transform: uppercase;
-      transition: all .3s ease;
-      outline: none;
-    }
-
-    .ts__btn-vipClub {
-      color: rgb(232, 230, 227);
-    }
-
-    .ts__btn-loyalty {
-      color: rgb(255, 80, 26);
-    }
-
-    .ts__btn-partnership {
-      color: rgb(144, 62, 255);
-    }
+.slick-active {
+  button {
+    height: 3px;
+    //background-color: $fi;
+    border: none;
   }
 }
