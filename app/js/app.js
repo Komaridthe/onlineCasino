@@ -21,3 +21,19 @@ tournament.addEventListener("mouseout", () => {
   tournamentBtn.classList.add("btn-out");
   tournamentBtn.classList.remove("btn-in");
 });
+
+document.querySelectorAll(".casinoInfo__wrapper").forEach((section) => {
+  section.onbeforematch = () => {
+    section.classList.remove("collapsed");
+  };
+  document.querySelector(".casinoInfo__showMore-btn").onclick = () => {
+    section.classList.toggle("collapsed");
+
+    const details = document.querySelector(".collapsedBlock");
+    if (section.classList.contains("collapsed")) {
+      details.hidden = "until-found";
+    } else {
+      details.removeAttribute("hidden");
+    }
+  };
+});
