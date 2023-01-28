@@ -1,21 +1,154 @@
 .tournament {
-  &__banner {
-    &-content {
-      .tournament__title {
-        &-caption {
-        }
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 0;
+  max-width: 768px;
+  width: 100%;
 
-        &-rub {
+  &__banner {
+    display: flex;
+    align-items: center;
+    background-color: #272f3b;
+    height: 140px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s;
+
+    &:before {
+      content: "";
+      background-image: url("../images/src/tournamentImeges/tournamentBackground.png");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-content {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      pointer-events: none;
+
+      .tournament__title {
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        &-caption {
+          display: inline-flex;
+          align-items: center;
+          color: #2dc53a;
+          font-size: inherit;
+          font-weight: inherit;
+          text-transform: uppercase;
+        }
+      }
+
+      .tournament__text {
+        line-height: 1.5;
+
+        &-firstLine {
+          color: hsla(0, 0%, 100%, .65);
         }
       }
     }
 
     &-figure {
-      img {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      left: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      .tournament__banner-img {
+        height: 100%;
+        pointer-events: none;
+        width: auto;
+      }
+
+      .slow-in {
+        animation: in .2s linear forwards;
+      }
+
+      .slow-out {
+        animation: out .2s linear forwards;
       }
 
       .tournament__banner-btn {
+        position: absolute;
+        right: 30px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        background: #20242d;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        color: inherit;
+        font-size: 13px;
+        font-weight: 400;
+        text-decoration: none;
+        opacity: 0;
+        padding: 9px 20px;
+        text-transform: capitalize;
+        z-index: 2;
+      }
+
+      .btn-in {
+        animation: btn-in .2s linear forwards;
+      }
+
+      .btn-out {
+        animation: btn-out .2s linear forwards;
       }
     }
+  }
+}
+
+@keyframes in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@keyframes out {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes btn-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes btn-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
