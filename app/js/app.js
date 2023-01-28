@@ -30,10 +30,13 @@ document.querySelectorAll(".casinoInfo__wrapper").forEach((section) => {
     section.classList.toggle("collapsed");
 
     const details = document.querySelector(".collapsedBlock");
+    const button = document.querySelector(".casinoInfo__showMore-btn");
     if (section.classList.contains("collapsed")) {
       details.hidden = "until-found";
+      button.innerText = "Показать больше";
     } else {
       details.removeAttribute("hidden");
+      button.innerText = "Скрыть информацию";
     }
   };
 });

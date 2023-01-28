@@ -1,38 +1,61 @@
 .landingGames {
+  margin: 0 auto 24px;
+  width: 100%;
+
   &__header {
+
     &-wrapper {
     }
   }
 
   .casinoInfo {
+    margin: 0 auto 24px;
+    width: 100%;
+
     .collapsed {
     }
 
     &__wrapper {
+      overflow: hidden;
+      position: relative;
+      text-overflow: ellipsis;
+      transition: max-height .3s ease;
+
       .casinoInfo__twoColums {
+        display: flex;
+        flex-direction: column;
+
         &-info {
-        }
-
-        .collapsedBlock {
-          &__firstPart {
-          }
-
-          &__Ul {
-            .collapsedBlock__Li {
-              &-title {
-              }
-
-              &-text {
-              }
-            }
-          }
+          width: 100%;
+          margin-right: 5%;
         }
       }
 
       .casinoInfo__showMore {
-        .-btn {
+        margin: 0 auto;
+        text-align: center;
+
+        &-btn {
+          background: transparent;
+          border: 1px solid hsla(0, 0%, 100%, .08);
+          border-radius: 5px;
+          color: #6b768a;
+          font-size: 12px;
+          padding: 7px 15px;
+          transition: all .3s;
+
+          &:hover {
+            background: #3077f7;
+            border-color: #3077f7;
+            color: #fff;
+          }
         }
       }
     }
   }
+}
+
+.casinoInfo__title {
+  font-size: 20px;
+  font-weight: 400;
 }
