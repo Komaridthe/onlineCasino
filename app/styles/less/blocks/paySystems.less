@@ -1,0 +1,105 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  flex-wrap: wrap;
+  max-width: 786px;
+  margin: 0 auto;
+  padding: 0;
+
+  &__paySystems {
+    display: flex;
+    margin: 5px -10px 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: calc(100% + 10px);
+
+    &-image {
+      align-items: center;
+      background: transparent;
+      border-radius: 5px;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      width: 10%;
+
+      img {
+        height: 18px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 0 10px;
+    font-size: 11px;
+    color: #525c71;
+
+    &-first {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 0;
+      flex-wrap: wrap;
+      margin: 10px 0;
+      text-align: center;
+      width: 100%;
+
+      .fc__copyright {
+        color: #fff;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .fc__links {
+        margin: 0 0 10px;
+        padding: 0;
+        width: 100%;
+
+        &-item {
+          display: inline-block;
+          margin: 0 5px 5px 0;
+
+          .fc__links-link {
+            display: flex;
+            align-items: center;
+            color: #828f9a;
+            cursor: pointer;
+            font-size: 11px;
+
+            svg {
+              margin-bottom: 2px;
+              margin-right: 3px;
+              width: 14px;
+            }
+          }
+        }
+      }
+
+      .fc__legalBasis {
+      }
+    }
+
+    &-second {
+      .fc__name {
+      }
+
+      .fc__logos {
+        &-left {
+        }
+
+        &-right {
+          a {
+            img {
+            }
+          }
+        }
+      }
+    }
+  }
+}
