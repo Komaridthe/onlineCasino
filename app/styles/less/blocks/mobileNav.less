@@ -1,0 +1,56 @@
+.mobileNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #20242d;
+  width: 100%;
+  max-width: 768px;
+  z-index: 10;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 420px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      position: relative;
+      width: 25%;
+
+      .mb__btn {
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #a3aeb7;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 11px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0;
+
+        &:hover {
+          color: #fff;
+        }
+
+        &-Icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          row-gap: 5px;
+        }
+      }
+    }
+  }
+}
