@@ -1,10 +1,6 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Custom JS
-});
-
 const tournament = document.querySelector(".tournament__banner");
 const tournamentBtn = document.querySelector(".tournament__banner-btn");
 const tournamentImg = document.querySelector(".tournament__banner-img");
@@ -38,5 +34,14 @@ document.querySelectorAll(".casinoInfo__wrapper").forEach((section) => {
       details.removeAttribute("hidden");
       button.innerText = "Скрыть информацию";
     }
+  };
+});
+
+document.querySelectorAll(".mobileNav__block-item").forEach((section) => {
+  section.onmouseenter = () => {
+    section.classList.toggle("wight");
+  };
+  section.onmouseleave = () => {
+    section.classList.remove("wight");
   };
 });
