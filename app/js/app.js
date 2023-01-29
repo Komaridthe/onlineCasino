@@ -1,3 +1,6 @@
+// // Import vendor jQuery plugin example
+// import "~/app/js/mane.js";
+
 const tournament = document.querySelector(".tournament__banner");
 const tournamentBtn = document.querySelector(".tournament__banner-btn");
 const tournamentImg = document.querySelector(".tournament__banner-img");
