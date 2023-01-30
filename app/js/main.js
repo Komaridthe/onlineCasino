@@ -19,26 +19,26 @@ $(function () {
     ],
   });
 });
-$(function () {
-  $(".swiper__wrapper").slick({
-    arrows: false,
-    dots: false,
-    slidesToShow: 6,
-    slidesToScroll: 6,
-    responsive: [
-      // {
-      //   breakpoint: 840,
-      //   settings: {
-      //     slidesToShow: 1,
-      //   },
-      // },
-      {
-        breakpoint: 601,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-    ],
-  });
-});
+// $(function () {
+//   $(".swiper__wrapper").slick({
+//     arrows: false,
+//     dots: false,
+//     slidesToShow: 6,
+//     slidesToScroll: 6,
+//     responsive: [
+//       // {
+//       //   breakpoint: 840,
+//       //   settings: {
+//       //     slidesToShow: 1,
+//       //   },
+//       // },
+//       {
+//         breakpoint: 601,
+//         settings: {
+//           slidesToShow: 3,
+//           slidesToScroll: 3,
+//         },
+//       },
+//     ],
+//   });
+// });

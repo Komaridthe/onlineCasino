@@ -1,5 +1,20 @@
-// // Import vendor jQuery plugin example
-// import "~/app/js/mane.js";
+import Swiper from "swiper";
+
+const swiper = new Swiper(".landingGames__swiper-swiper", {
+  loop: true,
+
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  navigation: {
+    nextEl: ".providers-swiper-button-next",
+    prevEl: ".providers-swiper-button-prev",
+  },
+});
+
+// =============================
 
 const tournament = document.querySelector(".tournament__banner");
 const tournamentBtn = document.querySelector(".tournament__banner-btn");

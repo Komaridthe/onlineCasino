@@ -9,6 +9,7 @@
 
     &-wrapper {
       display: flex;
+      align-items: center;
       justify-content: space-between;
 
       .landingGames__header-title {
@@ -16,6 +17,36 @@
         display: flex;
         column-gap: 10px;
         font-size: 16px;
+      }
+    }
+
+    .landingGames__header-buttons {
+      align-items: center;
+      display: flex;
+      height: 100%;
+
+
+      .button-prev {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px 0 0 25px;
+        border: 1px solid #2f4553;
+        border-right: none;
+        cursor: pointer;
+        height: 36px;
+        width: 52px;
+      }
+
+      .button-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 25px 25px 0;
+        border: 1px solid #2f4553;
+        cursor: pointer;
+        height: 36px;
+        width: 52px;
       }
     }
   }
@@ -69,37 +100,15 @@
     .landingGames__swiper {
       width: 100%;
 
-      .swiper {
-        list-style: none;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-        padding: 0;
-        position: relative;
+      &-swiper {
 
-        &__wrapper {
-          display: flex;
-          height: 100%;
-          position: relative;
-          width: 100%;
-
-          //.slick-arrow {
-          //  position: absolute;
-          //  top: -10px;
-          //  right: 10px;
-          //  z-index: 10;
-          //}
+        .swiper__container {
 
           &-slide {
-            flex-shrink: 0;
-            height: 100%;
-            position: relative;
-            margin-right: 10px;
 
             .swiper__item {
               background-color: #21242d;
               border-radius: 10px;
-              //cursor: pointer;
               height: 70px;
               width: 100%;
 
