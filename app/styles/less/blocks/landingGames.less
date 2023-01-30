@@ -55,11 +55,12 @@
     margin-bottom: 24px;
 
     &__swiper {
+      width: 100%;
+
       &-wrapper {
         margin-top: 5px;
 
         .gameSelectionBlock__swiper-slide {
-
           .swiper__item {
             transition: transform .1s linear, -webkit-transform .1s linear;
 
@@ -76,15 +77,14 @@
               .swiper__item-thumb {
                 border-radius: 5px;
                 height: 100%;
-                width: 200%;
+                width: 100%;
                 overflow: hidden;
                 padding-bottom: 132%;
                 position: relative;
 
                 .thumb-img {
                   background-image: url("../images/src/landingGamesIcons/OsirisGoldHoldnLink.webp");
-
-                  background-position: right center;
+                  background-position: 50%;
                   background-repeat: no-repeat;
                   background-size: contain;
                   position: absolute;
@@ -94,6 +94,7 @@
                   bottom: 0;
                   height: 100%;
                   width: 100%;
+                  display: block;
                 }
               }
             }
