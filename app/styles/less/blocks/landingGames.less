@@ -56,9 +56,16 @@
 
     &__swiper {
       &-wrapper {
+        margin-top: 5px;
+
         .gameSelectionBlock__swiper-slide {
 
           .swiper__item {
+            transition: transform .1s linear, -webkit-transform .1s linear;
+
+            &:hover {
+              transform: translateY(-5px);
+            }
 
             &-link {
               -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -95,7 +102,7 @@
       }
     }
 
-    .newGames {
+    .newGames, .liveRTP, .selectorChoice {
       margin-bottom: 15px;
       //.newGames__item-img {
       //  background-image: url("../images/src/landingGamesIcons/OsirisGoldHoldnLink.webp");
