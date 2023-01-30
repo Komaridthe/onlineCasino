@@ -26,6 +26,28 @@ new Swiper(".landingGames__swiper-swiper", {
   },
 });
 
+new Swiper(".gameSelectionBlock__swiper", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".newGames-swiper-button-next",
+    prevEl: ".newGames-swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    380: {
+      slidesPerView: 3,
+    },
+    640: {
+      slidesPerView: 4,
+    },
+    730: {
+      slidesPerView: 5,
+    },
+  },
+});
 // =============================
 
 const tournament = document.querySelector(".tournament__banner");

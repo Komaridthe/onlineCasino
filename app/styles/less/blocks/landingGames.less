@@ -51,6 +51,59 @@
     }
   }
 
+  .gameSelectionBlock {
+    margin-bottom: 24px;
+
+    &__swiper {
+      &-wrapper {
+        .gameSelectionBlock__swiper-slide {
+
+          .swiper__item {
+
+            &-link {
+              -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+              display: block;
+              position: relative;
+              width: 100%;
+
+              .swiper__item-thumb {
+                border-radius: 5px;
+                height: 100%;
+                width: 200%;
+                overflow: hidden;
+                padding-bottom: 132%;
+                position: relative;
+
+                .thumb-img {
+                  background-image: url("../images/src/landingGamesIcons/OsirisGoldHoldnLink.webp");
+
+                  background-position: right center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  top: 0;
+                  bottom: 0;
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .newGames {
+      margin-bottom: 15px;
+      //.newGames__item-img {
+      //  background-image: url("../images/src/landingGamesIcons/OsirisGoldHoldnLink.webp");
+      //}
+    }
+  }
+
+
   .casinoInfo {
     margin: 0 auto 24px;
     width: 100%;
@@ -97,16 +150,12 @@
   }
 
   .providers {
-
     .landingGames__swiper {
       width: 100%;
 
       &-swiper {
-
         .swiper__container {
-
           &-slide {
-
             .swiper__item {
               background-color: #21242d;
               border-radius: 10px;
