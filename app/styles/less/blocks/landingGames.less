@@ -95,6 +95,38 @@
                   height: 100%;
                   width: 100%;
                   display: block;
+
+                  .selector__info {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border-radius: 0 0 0 25px;
+                    color: #fff;
+                    display: flex;
+                    font-size: 80%;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    padding: 1% 10%;
+                    z-index: 1;
+                  }
+
+                  .selector__person {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    background: rgba(0, 0, 0, .35);
+                    border-radius: 18px 0 0 0;
+                    color: #fff;
+                    font-size: 12px;
+                    padding: 4px 10px 2px 13px;
+                    z-index: 1;
+
+                    img {
+                      margin: -1px 3px 0 0;
+                    }
+                  }
                 }
               }
             }
@@ -107,21 +139,42 @@
       margin-bottom: 15px;
     }
 
-    .selectorChoice {
-      .newGames__item-img {
-        background-image: url("../images/src/landingGamesIcons/miner.webp") !important;
+    .newGames {
+      &__item-img {
+        .selector__info {
+          background-color: #1070e3;
+        }
       }
     }
 
     .liveRTP {
-      .newGames__item-img {
+      &__item-img {
         background-image: url("../images/src/landingGamesIcons/generousjack.webp") !important;
+
+        .selector__info {
+          background-color: #dc3545;
+        }
       }
     }
 
+    .selectorChoice {
+      &__item-img {
+        background-image: url("../images/src/landingGamesIcons/miner.webp") !important;
+
+        .selector__info {
+          background-color: #ff5722;
+        }
+      }
+    }
+
+
     .popularGames {
-      .newGames__item-img {
+      &__item-img {
         background-image: url("../images/src/landingGamesIcons/bananas.webp") !important;
+
+        .selector__info {
+          background-color: #219a19;
+        }
       }
     }
   }
