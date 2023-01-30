@@ -1,16 +1,28 @@
 import Swiper from "swiper";
 
-const swiper = new Swiper(".landingGames__swiper-swiper", {
+new Swiper(".landingGames__swiper-swiper", {
   loop: true,
-
-  // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  // },
-
+  spaceBetween: 10,
   navigation: {
     nextEl: ".providers-swiper-button-next",
     prevEl: ".providers-swiper-button-prev",
+  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    380: {
+      slidesPerView: 3,
+    },
+    640: {
+      slidesPerView: 4,
+    },
+    730: {
+      slidesPerView: 5,
+    },
   },
 });
 
