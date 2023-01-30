@@ -24,6 +24,7 @@ $(function () {
     arrows: false,
     dots: false,
     slidesToShow: 6,
+    slidesToScroll: 6,
     responsive: [
       // {
       //   breakpoint: 840,
@@ -35,6 +36,7 @@ $(function () {
         breakpoint: 601,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 3,
         },
       },
     ],
