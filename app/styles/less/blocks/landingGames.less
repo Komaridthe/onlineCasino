@@ -4,17 +4,25 @@
   max-width: 800px;
 
   &__header {
+    width: 100%;
+    margin-bottom: 10px;
 
     &-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .landingGames__header-title {
+        align-items: center;
+        display: flex;
+        column-gap: 10px;
+        font-size: 16px;
+      }
     }
   }
 
   .casinoInfo {
     margin: 0 auto 24px;
     width: 100%;
-
-    .collapsed {
-    }
 
     &__wrapper {
       overflow: hidden;
@@ -51,6 +59,62 @@
             background: #3077f7;
             border-color: #3077f7;
             color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .providers {
+    .landingGames__swiper {
+      width: 100%;
+
+      .swiper {
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+
+        &__wrapper {
+          display: flex;
+          height: 100%;
+          position: relative;
+          width: 100%;
+
+          &-slide {
+            flex-shrink: 0;
+            height: 100%;
+            position: relative;
+            margin-right: 10px;
+
+            .swiper__item {
+              background-color: #21242d;
+              border-radius: 10px;
+              //cursor: pointer;
+              height: 70px;
+              width: 100%;
+
+              &-link {
+                .swiper__item-thumb {
+                  background-color: #262b37;
+                  border-radius: 5px;
+                  display: flex;
+                  height: 100%;
+                  width: 100%;
+                  overflow: hidden;
+                  position: relative;
+                  text-align: center;
+
+                  img {
+                    margin: auto;
+                    max-height: 65%;
+                    max-width: 80%;
+                  }
+                }
+              }
+            }
           }
         }
       }
