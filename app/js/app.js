@@ -7,9 +7,6 @@ new Swiper(".landingGames__swiper-swiper", {
     nextEl: ".providers-swiper-button-next",
     prevEl: ".providers-swiper-button-prev",
   },
-  // pagination: {
-  //   el: ".swiper-pagination",
-  // },
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -26,7 +23,76 @@ new Swiper(".landingGames__swiper-swiper", {
   },
 });
 
-new Swiper(".gameSelectionBlock__swiper", {
+new Swiper(".newGames-swiper", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".newGames-swiper-button-next",
+    prevEl: ".newGames-swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    380: {
+      slidesPerView: 3,
+    },
+    640: {
+      slidesPerView: 4,
+    },
+    730: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+new Swiper(".liveRTP-swiper", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".newGames-swiper-button-next",
+    prevEl: ".newGames-swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    380: {
+      slidesPerView: 3,
+    },
+    640: {
+      slidesPerView: 4,
+    },
+    730: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+new Swiper(".selectorChoice-swiper", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".newGames-swiper-button-next",
+    prevEl: ".newGames-swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    380: {
+      slidesPerView: 3,
+    },
+    640: {
+      slidesPerView: 4,
+    },
+    730: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+new Swiper(".popularGames-swiper", {
   loop: true,
   spaceBetween: 10,
   navigation: {
