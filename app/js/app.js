@@ -115,6 +115,11 @@ new Swiper(".popularGames-swiper", {
   },
 });
 // =============================
+$(function () {
+  $(".header__inner-menuBurger").on("click", function () {
+    $(".menu__list").toggleClass("menu__list--active");
+  });
+});
 
 const tournament = document.querySelector(".tournament__banner");
 const tournamentBtn = document.querySelector(".tournament__banner-btn");

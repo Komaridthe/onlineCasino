@@ -42,9 +42,48 @@
       font-weight: 400;
       cursor: pointer;
       transition: all .5s;
+      margin-right: 10px;
 
       &:hover {
         background-color: #1966f2;
+      }
+    }
+
+    &-menuBurger {
+      cursor: pointer;
+    }
+
+    .menu__list {
+      display: block;
+      position: absolute;
+      background-color: #20242d;
+      top: 60px;
+      left: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translate(-50%, -300px);
+      transition: all .5s;
+
+      &.menu__list--active {
+        transform: translate(-50%, 0px);
+        z-index: 10;
+      }
+
+      &-item {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+
+        .menu__list-link {
+          display: block;
+          padding-top: 2px;
+          font-size: 14px;
+          color: #fff;
+
+          &:hover {
+            background-color: #fff;
+            color: #20242d;
+          }
+        }
       }
     }
   }
