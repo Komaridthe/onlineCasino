@@ -50,8 +50,8 @@ new Swiper(".liveRTP-swiper", {
   loop: true,
   spaceBetween: 10,
   navigation: {
-    nextEl: ".newGames-swiper-button-next",
-    prevEl: ".newGames-swiper-button-prev",
+    nextEl: ".liveRTP-swiper-button-next",
+    prevEl: ".liveRTP-swiper-button-prev",
   },
   breakpoints: {
     320: {
@@ -73,8 +73,8 @@ new Swiper(".selectorChoice-swiper", {
   loop: true,
   spaceBetween: 10,
   navigation: {
-    nextEl: ".newGames-swiper-button-next",
-    prevEl: ".newGames-swiper-button-prev",
+    nextEl: ".selectorChoice-swiper-button-next",
+    prevEl: ".selectorChoice-swiper-button-prev",
   },
   breakpoints: {
     320: {
@@ -96,8 +96,8 @@ new Swiper(".popularGames-swiper", {
   loop: true,
   spaceBetween: 10,
   navigation: {
-    nextEl: ".newGames-swiper-button-next",
-    prevEl: ".newGames-swiper-button-prev",
+    nextEl: ".popularGames-swiper-button-next",
+    prevEl: ".popularGames-swiper-button-prev",
   },
   breakpoints: {
     320: {
