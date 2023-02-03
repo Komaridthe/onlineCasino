@@ -1,119 +1,137 @@
-import Swiper from "swiper";
+import { Swiper, Parallax, Navigation } from "swiper";
 
-new Swiper(".landingGames__swiper-swiper", {
-  loop: true,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".providers-swiper-button-next",
-    prevEl: ".providers-swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
+document.addEventListener("DOMContentLoaded", () => {
+  new Swiper(".landingGames__swiper-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    observer: true,
+    observeParents: true,
+    parallax: true,
+    navigation: {
+      nextEl: ".providers-swiper-button-next",
+      prevEl: ".providers-swiper-button-prev",
     },
-    380: {
-      slidesPerView: 3,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+      },
+      380: {
+        slidesPerView: 3,
+      },
+      640: {
+        slidesPerView: 4,
+      },
+      730: {
+        slidesPerView: 5,
+      },
     },
-    640: {
-      slidesPerView: 4,
+  });
+
+  new Swiper(".newGames-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    observer: true,
+    observeParents: true,
+    parallax: true,
+    navigation: {
+      nextEl: ".newGames-swiper-button-next",
+      prevEl: ".newGames-swiper-button-prev",
     },
-    730: {
-      slidesPerView: 5,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+      },
+      380: {
+        slidesPerView: 3,
+      },
+      640: {
+        slidesPerView: 4,
+      },
+      730: {
+        slidesPerView: 5,
+      },
     },
-  },
+  });
+
+  new Swiper(".liveRTP-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    observer: true,
+    observeParents: true,
+    parallax: true,
+    navigation: {
+      nextEl: ".liveRTP-swiper-button-next",
+      prevEl: ".liveRTP-swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+      },
+      380: {
+        slidesPerView: 3,
+      },
+      640: {
+        slidesPerView: 4,
+      },
+      730: {
+        slidesPerView: 5,
+      },
+    },
+  });
+
+  new Swiper(".selectorChoice-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    observer: true,
+    observeParents: true,
+    parallax: true,
+    navigation: {
+      nextEl: ".selectorChoice-swiper-button-next",
+      prevEl: ".selectorChoice-swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+      },
+      380: {
+        slidesPerView: 3,
+      },
+      640: {
+        slidesPerView: 4,
+      },
+      730: {
+        slidesPerView: 5,
+      },
+    },
+  });
+
+  new Swiper(".popularGames-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    observer: true,
+    observeParents: true,
+    parallax: true,
+    navigation: {
+      nextEl: ".popularGames-swiper-button-next",
+      prevEl: ".popularGames-swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+      },
+      380: {
+        slidesPerView: 3,
+      },
+      640: {
+        slidesPerView: 4,
+      },
+      730: {
+        slidesPerView: 5,
+      },
+    },
+  });
 });
 
-new Swiper(".newGames-swiper", {
-  loop: true,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".newGames-swiper-button-next",
-    prevEl: ".newGames-swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    380: {
-      slidesPerView: 3,
-    },
-    640: {
-      slidesPerView: 4,
-    },
-    730: {
-      slidesPerView: 5,
-    },
-  },
-});
-
-new Swiper(".liveRTP-swiper", {
-  loop: true,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".liveRTP-swiper-button-next",
-    prevEl: ".liveRTP-swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    380: {
-      slidesPerView: 3,
-    },
-    640: {
-      slidesPerView: 4,
-    },
-    730: {
-      slidesPerView: 5,
-    },
-  },
-});
-
-new Swiper(".selectorChoice-swiper", {
-  loop: true,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".selectorChoice-swiper-button-next",
-    prevEl: ".selectorChoice-swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    380: {
-      slidesPerView: 3,
-    },
-    640: {
-      slidesPerView: 4,
-    },
-    730: {
-      slidesPerView: 5,
-    },
-  },
-});
-
-new Swiper(".popularGames-swiper", {
-  loop: true,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".popularGames-swiper-button-next",
-    prevEl: ".popularGames-swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    380: {
-      slidesPerView: 3,
-    },
-    640: {
-      slidesPerView: 4,
-    },
-    730: {
-      slidesPerView: 5,
-    },
-  },
-});
 // =============================
 $(function () {
   $(".header__inner-menuBurger").on("click", function () {
